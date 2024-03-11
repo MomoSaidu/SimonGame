@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d7e0af;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Button Styles */
+button {
+  margin: 0 5px;
+  padding: 1px 3px;
+  font-size: 24px;
+  border: none;
+  border-radius: 1000px;
+  color: #0e0d0d;
+  background-color: #a5ada8;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#score-display, #high-score-display {
+  margin: 0 5px;
+  padding: 5px 15px;
+  font-size: 24px;
+  border: none;
+  border-radius: 1000px;
+  color: #0e0d0d;
+  background-color: #a5ada8;
+  font-family: 'Orbitron', sans-serif;
+  width: 50px;
+  text-align: center;
+}
+
+/* Game Board and Buttons */
+#game-board {
+  position: relative;
+  border-radius: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  height: 470px;
+  margin: 0 auto;
+}
+
+.game-button {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 0px #bdc3c7;
+  cursor: pointer;
+}
+
+/* Colored Signal Buttons */
+#green, #red, #yellow, #blue {
+  box-shadow: inset 0 0 0 10px #000;
+}
+
+#green {
+  background-color: #2ecc71;
+}
+
+#red {
+  background-color: #e74c3c;
+}
+
+#yellow {
+  background-color: #f1c40f;
+}
+
+#blue {
+  background-color: #3498db;
+}
+
+/* Control Panel */
+#control-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+/* Light Indicator */
+.light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red; /* Initially red, turns green when game starts */
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+/* Active Button Glow */
+.game-button.active {
+  filter: brightness(200%); /* Brightens the button to indicate active state */
+}
